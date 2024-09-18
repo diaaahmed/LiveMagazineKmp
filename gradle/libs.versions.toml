@@ -24,10 +24,18 @@ navigationCompose = "2.8.0-alpha02"
 lifecycleViewModel = "2.8.2"
 coilCompose = "2.2.1"
 
+voyagerVersion = "1.1.0-beta02"
 
 
 
 [libraries]
+
+voyager-koin = {module = "cafe.adriel.voyager:voyager-koin", version.ref = "voyagerVersion"}
+voyager-viewmodel = {module = "cafe.adriel.voyager:voyager-screenmodel", version.ref = "voyagerVersion"}
+voyager-transition = {module = "cafe.adriel.voyager:voyager-transitions", version.ref = "voyagerVersion"}
+voyager-tab ={ module = "cafe.adriel.voyager:voyager-tab-navigator", version.ref = "voyagerVersion"}
+voyager = {module = "cafe.adriel.voyager:voyager-navigator", version.ref = "voyagerVersion"}
+
 
 landscapist-coil3 = { module = "com.github.skydoves:landscapist-coil3", version.ref = "landscapistCoil3" }
 lifecycle-viewmodel = { module = "androidx.lifecycle:lifecycle-viewmodel", version.ref = "lifecycleViewModel"}

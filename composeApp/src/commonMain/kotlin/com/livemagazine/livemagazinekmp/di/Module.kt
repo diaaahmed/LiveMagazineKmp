@@ -1,5 +1,6 @@
 package com.livemagazine.livemagazinekmp.di
 
+import com.livemagazine.livemagazinekmp.depenencies.HomeViewModelVoyager
 import com.livemagazine.livemagazinekmp.depenencies.MyAgainRepositoryImpl
 import com.livemagazine.livemagazinekmp.depenencies.MyRepository
 import com.livemagazine.livemagazinekmp.depenencies.MyRepositoryImpl
@@ -19,6 +20,7 @@ val sharedModule = module {
 //    single<MyRepository> { MyRepositoryImpl(get()) }
 
     single<ServiceRepo> { ServiceRepoImpl(get()) }
+    single{HomeViewModelVoyager(get())}
 
     singleOf(::MyRepositoryImpl).bind<MyRepository>()
 

@@ -61,6 +61,13 @@ kotlin {
 
             implementation(libs.landscapist.coil3)
 
+            // Voyager
+            implementation(libs.voyager)
+            implementation(libs.voyager.tab)
+            implementation(libs.voyager.transition)
+            implementation(libs.voyager.viewmodel)
+            implementation(libs.voyager.koin)
+
         }
 
         iosMain.dependencies{
